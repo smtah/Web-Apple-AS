@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi página aesthetic ✨</title>
+  <title>Mi blog ✨</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -16,68 +16,62 @@
     }
 
     body {
-      min-height: 100vh;
-      background: linear-gradient(135deg, #fdfbfb, #ebedee);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background: #f8fafc;
       color: #222;
     }
 
-    .card {
-      background: white;
-      width: 90%;
-      max-width: 400px;
-      padding: 30px;
-      border-radius: 20px;
+    header {
+      padding: 60px 20px;
       text-align: center;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-      animation: fadeIn 1s ease;
+      background: linear-gradient(135deg, #e9d5ff, #c7d2fe);
     }
 
-    img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border: 4px solid #e9d5ff;
-    }
-
-    h1 {
+    header h1 {
+      font-size: 36px;
       font-weight: 600;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #555;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    article {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      animation: fadeIn 0.8s ease;
+    }
+
+    article h2 {
       font-size: 24px;
       margin-bottom: 10px;
     }
 
-    p {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 20px;
+    .date {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 15px;
     }
 
-    .links a {
-      display: block;
-      text-decoration: none;
-      background: #e9d5ff;
-      color: #4c1d95;
-      padding: 12px;
-      border-radius: 12px;
-      margin: 10px 0;
-      transition: all 0.3s ease;
-      font-weight: 500;
-    }
-
-    .links a:hover {
-      background: #c084fc;
-      color: white;
-      transform: scale(1.05);
+    article p {
+      line-height: 1.7;
+      color: #444;
     }
 
     footer {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #999;
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      font-size: 13px;
     }
 
     @keyframes fadeIn {
@@ -95,22 +89,36 @@
 
 <body>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Foto">
+  <header>
+    <h1>Mi blog ✨</h1>
+    <p>pensamientos, ideas y cosas bonitas</p>
+  </header>
 
-    <h1>Tu nombre ✨</h1>
-    <p>Una pequeña descripción aesthetic sobre ti 💭</p>
+  <main>
 
-    <div class="links">
-      <a href="#">Instagram</a>
-      <a href="#">GitHub</a>
-      <a href="#">Contacto</a>
-    </div>
+    <article>
+      <h2>Primer post 💭</h2>
+      <div class="date">9 febrero 2026</div>
+      <p>
+        Este es mi primer post en el blog. Aquí puedo escribir lo que quiera,
+        mis ideas, pensamientos o simplemente cosas que me inspiran.
+      </p>
+    </article>
 
-    <footer>
-      hecho con 💜
-    </footer>
-  </div>
+    <article>
+      <h2>Otro día más 🌙</h2>
+      <div class="date">8 febrero 2026</div>
+      <p>
+        Hoy fue un día tranquilo. Me gusta escribir aquí porque se siente
+        simple, limpio y muy aesthetic.
+      </p>
+    </article>
+
+  </main>
+
+  <footer>
+    hecho con 💜 y GitHub Pages
+  </footer>
 
 </body>
 </html>
