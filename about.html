@@ -1,54 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Sobre mí</title>
-    <link rel="stylesheet" href="about.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Apple AS</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8fafc;
+      color: #222;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #14397a, #c7d2fe);
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #555;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    article {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      animation: fadeIn 0.8s ease;
+    }
+
+    article h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .date {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 15px;
+    }
+
+    article p {
+      line-height: 1.7;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      font-size: 13px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <header class="blog-header">
-        <h1>Sobre mí</h1>
-        <p class="subtitle">Un poco de mi historia, ideas y proyectos</p>
-    </header>
+  <header>
+    <h1>Apple AS</h1>
+    <p>Accesorios de Apple</p>
+  </header>
 
-    <main class="blog-container">
-        <article class="post">
-            <p class="post-date">Publicado el 10 de febrero de 2026</p>
+  <main>
 
-            <p>
-                Bienvenido a mi espacio personal. Aquí comparto quién soy, 
-                qué hago y qué me motiva a seguir creando.
-            </p>
+    <article>
+      <h2>Nosotros</h2>
+<img src="IMG_8302.jpg" alt="La nostre foto" width="200" />
+        
+      <p>Somos Adam y Sami (AS) y en esta web vamos a contar con algunos
+ejemplos de accesorios de Apple no tienen la privacidad que creemos que
+deberían tener.</p>
+    </article>
 
-            <h2>¿Quién soy?</h2>
-            <p>
-                Soy una persona apasionada por el desarrollo web, el diseño
-                y la creatividad digital. Me gusta aprender cosas nuevas
-                y experimentar con ideas.
-            </p>
+    <article>
+      <h2>Accesorios Apple</h2>
+      
+      <p>Visita los <a href="about.html">Accesorios elegidos</a></p>
+        Aqui os mostraremos los accesorios elegidos por AS
+      </p>
+    </article>
 
-            <h2>¿Qué encontrarás aquí?</h2>
-            <p>
-                Este blog es un lugar donde escribo sobre proyectos,
-                aprendizajes y pensamientos relacionados con la tecnología
-                y la vida digital.
-            </p>
+  </main>
 
-            <blockquote>
-                “Aprender a crear es aprender a pensar.”
-            </blockquote>
-
-            <p>
-                Gracias por pasarte por aquí 🤍
-            </p>
-        </article>
-    </main>
-
-    <footer class="blog-footer">
-        <p>© 2026 · Mi Blog Personal</p>
-    </footer>
+  <footer>
+    hecho con GitHub Pages
+  </footer>
 
 </body>
 </html>
